@@ -33,6 +33,7 @@ export const putDb = async (content) => {
   
 };
 
+//FIGURE OUT HOW TO ADD THE BELOW CONSOLE TO THE FUNCTION ABOVE
 //console.error('putDb not implemented');
 
 // TODO: Add logic for a method that gets all the content from the database
@@ -55,7 +56,7 @@ export const getDb = async () => {
     return result.value;
 
 };
-
+//FIGURE OUT HOW TO ADD THE BELOW CONSOLE TO THE FUNCTION ABOVE
 //console.error('getDb not implemented');
 
 initdb();
