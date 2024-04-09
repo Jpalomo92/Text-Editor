@@ -43,8 +43,8 @@
 
 
 
-  ## Usage
-    J.A.T.E is a very simple tool use. Please feel free to take the notes that you need. This application will also allow you to save pieces of code of code you have written to look at later.
+## Usage
+  J.A.T.E is a very simple tool use. Please feel free to take the notes that you need. This application will also allow you to save pieces of code of code you have written to look at later.
  
 
   ## License
