@@ -58,6 +58,7 @@ export const getDb = async () => {
 
 };
 //FIGURE OUT HOW TO ADD THE BELOW CONSOLE TO THE FUNCTION ABOVE
+// try testing thsi out
 //console.error('getDb not implemented');
 
 initdb();
