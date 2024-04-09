@@ -25,11 +25,12 @@ module.exports = () => {
         template: './index.html',
         title: "Webpack Plugin",
       }),
-      new MiniCssExtractPlugin(),
+      
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
+
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -46,6 +47,8 @@ module.exports = () => {
           destination: path.join("assets", "icons"),
         }],
       }),
+      
+      new MiniCssExtractPlugin(),
     ],
 
     module: {
