@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
 
    // Database and version
    const jateDB = await openDB("jate", 1);
@@ -25,7 +25,7 @@ export const putDb = async (content) => {
    const store = tx.objectStore("jate");
 
    // Pass in content
-   const request = store.put({ id: 1, value: content });
+   const request = store.put({ id: id, value: content });
 
    // Confirmation
    const result = await request;
@@ -48,11 +48,12 @@ export const getDb = async () => {
     const store = tx.objectStore("jate");
   
     // Get all request
+    //may need to set this as a store.get(1);
     const request = store.getAll();
   
     // Confirmation and return
     const result = await request;
-    console.log("🚀 - data read from database", result);
+    console.log("data read from database", result);
     return result.value;
 
 };
